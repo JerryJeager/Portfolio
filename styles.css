@@ -29,33 +29,28 @@ span{
     color: hsl(326, 96%, 42%);
 }
 #hero{
-    height: 140vh;
+    height: 80vh;
     width: 100%;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-#jerry-photo{
-    float: right;
-    /* border: 2px solid white; */
-    border-radius: 50%;
-    height: 200px;
-    max-width: 100%;
-    border: 4px solid hsl(278, 43%, 45%);
-    box-shadow: 5px 6px 16px 5px #000000;
+    position: relative;
+    bottom: 30px;
 
 }
 #welcome-section{
     margin-top: 110px;
     margin-left: 20px;
+    display:flex;
+    justify-content: center;
 }
 #welcome-section h1{
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
-}#welcome-section{
+}#welcome-section p{
     color: #d2bfff;
+    font-size: 1.2rem;
 }
 .role{
     font-weight: bold;
@@ -71,3 +66,16 @@ button{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+button:hover{
+    background: white;
+    border: 2px solid hsl(326, 96%, 42%);
+    color: hsl(326, 96%, 42%)
+}
+#amadi{
+    border-radius: 50%;
+    height: 190px;
+    position: relative;
+    left: 20px;
+
+}
+
