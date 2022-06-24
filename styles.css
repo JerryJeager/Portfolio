@@ -8,55 +8,59 @@ html, body {
     width: 100%;
 
 }
-#hero{
-    margin-top: 20px;
-}
-nav a{
-    text-decoration: none;
-    color: white;
-    top: 0;
-    word-spacing: 15px;
-}
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-}
-nav ul{
-    float: right;
-}
-nav{
-    padding: 20px 25px;
-    top: 0px;
-}
-#logo{
-    font-size: 1.6rem;
-    color: white;
+main{
+    width: 95%;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+    
 }
 span{
     color: hsl(326, 96%, 42%);
 }
-#hero{
-    height: 80vh;
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:#f1e5ea96;
     width: 100%;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: relative;
-    bottom: 30px;
+}
+header h1{
+    margin-left: 1em;
+}
+nav ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
 
 }
+nav li{
+    margin-left: 2em;
+    
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: .8rem;
+}
+nav{
+    display:flex;
+    flex-direction: column;
+    padding-top: 1em;
+    margin-right: 2em;
+}
 #welcome-section{
-    margin-top: 110px;
+    /* margin-top: 110px; */
     margin-left: 20px;
     display:flex;
     justify-content: center;
 }
 #welcome-section h1{
-    color: white;
+    color: #0d061f;
     font-size: 2rem;
     font-weight: bold;
 }#welcome-section p{
-    color: #d2bfff;
+    color: #0d061f;
     font-size: 1.2rem;
 }
 .role{
@@ -78,9 +82,6 @@ button:hover{
     border: 2px solid hsl(326, 96%, 42%);
     color: hsl(326, 96%, 42%)
 }
-#hire{
-    color: red;
-}
 #amadi{
     border-radius: 50%;
     height: 190px;
@@ -88,31 +89,81 @@ button:hover{
     right: 5px;
 
 }
-#aboutMe{
-    background-color: #ecc7dd;
-    height: auto;
-    position: relative;
-    bottom: 60px;
-
+#about-me-section{
+    background-color: #f5dee4f3;
+    background: linear-gradient(white, #f5dee4f3 );
 }
-#aboutMe1{
+#about-me-section h1{
+    text-align: center;
+}
+#aboutMe{
+    height: auto;
     display: flex;
+    justify-content: space-between;
+    
+}
+#aboutMeImg{
+    width: 30%;
+    margin: 1em 0;
+}
+#aboutMeImg img{
+    filter: grayscale(100%);
+    max-width: 100%;
+    border-radius: 9px;
 }
 #aboutMe h1{
     text-align: center;
 }
 #aboutMeContent{
-    width: 40%;
-    margin-right: 30px;
-    
-}
-#aboutMe img{
-    height: 260px;
-    border-radius: 10px;
-    width: 65%;
-    margin-left: 10px;
+    width: 60%;
+
 }
 #projects{
     background-color: #434343;
+    height: auto;
 }
-
+#projects h1{
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+#project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+#project img{
+    display: block;
+}
+.project-img{
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+.project-title {
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+#project-grid a{
+    text-decoration: none;
+}
+@media screen and (max-width: 450px){
+    #aboutMe{
+        flex-direction: column;
+    }
+    #aboutMeImg{
+        width: 300px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    #aboutMeContent{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+}
