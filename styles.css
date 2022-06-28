@@ -9,20 +9,21 @@ html, body {
 
 }
 main{
-    width: 95%;
-    max-width: 650px;
+    width: 100%;
+    /* max-width: 650px; */
     margin: 0 auto;
     line-height: 1.6;
     
 }
 span{
-    color: hsl(326, 96%, 42%);
+    color: #73c0f4;
 }
 header{
     display: flex;
     justify-content: space-between;
-    background-color:#f1e5ea96;
+    background-color:#e6eff3;
     width: 100%;
+    color: #8f4f06;
 }
 header h1{
     margin-left: 1em;
@@ -39,7 +40,7 @@ nav li{
     
 }
 nav a{
-    color: black;
+    color: #8f4f06;
     text-decoration: none;
     font-size: .8rem;
 }
@@ -51,24 +52,36 @@ nav{
 }
 #welcome-section{
     /* margin-top: 110px; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
     display:flex;
     justify-content: center;
+    background-color: #f3e4c6;
+    color: #8f4f06;
 }
 #welcome-section h1{
-    color: #0d061f;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }#welcome-section p{
-    color: #0d061f;
     font-size: 1.2rem;
 }
+#welcome-section-contents{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+#desc{
+    margin-left: 1.4em;
+}
+#amadiImg{
+    margin-top: 1.3em;
+}
+
 .role{
     font-weight: bold;
-    color: white;
+    color: #73c0f4;
 }
 button{
-    background:hsl(326, 96%, 42%);
+    background: #8f4f06;
     color: white;
     border-radius: 7px;
     border: none;
@@ -79,8 +92,8 @@ button{
 }
 button:hover{
     background: white;
-    border: 2px solid hsl(326, 96%, 42%);
-    color: hsl(326, 96%, 42%)
+    border: 2px solid #8f4f06;
+    color:#8f4f06;
 }
 #amadi{
     border-radius: 50%;
@@ -90,11 +103,19 @@ button:hover{
 
 }
 #about-me-section{
-    background-color: #f5dee4f3;
-    background: linear-gradient(white, #f5dee4f3 );
+    background-color: #728ca3;
+    color: white;
+    line-height: 1.7;
+    font-size: 1.2rem;
 }
 #about-me-section h1{
     text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    margin: 0 4em;
+    border-bottom: 2px solid white;
+    padding-bottom: .2em;
+    
 }
 #aboutMe{
     height: auto;
@@ -119,7 +140,7 @@ button:hover{
 
 }
 #projects{
-    background-color: #434343;
+    background-color: #8f4f06;
     height: auto;
 }
 #projects h1{
@@ -166,4 +187,51 @@ button:hover{
         margin: 0 auto;
     }
     
+}
+@media screen and (min-width: 1024px){
+    #welcome-section{
+    /* margin-top: 110px; */
+    /* margin-left: 20px; */
+    display:flex;
+    justify-content: center;
+    background-color: #f3e4c6;
+    color: #8f4f06;
+}
+#welcome-section h1{
+    font-weight: bold;
+    font-size: 3rem;
+}#welcome-section p{
+    font-size: 2rem;
+}
+#welcome-section-contents{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+#desc{
+    margin-left: 6em;
+}
+#amadiImg{
+    margin-top: 1.3em;
+    margin-right: 4em;
+}
+#amadi{
+    height: 21em;
+    width: auto;
+    max-width: 100%;
+}
+.role{
+    font-weight: bold;
+    color: #73c0f4;
+}
+button{
+    background: #8f4f06;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    height: 30px;
+    width: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 }
