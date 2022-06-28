@@ -38,7 +38,6 @@ nav ul{
 }
 nav li{
     margin-left: 2em;
-    border: 2px solid blue;
     position: relative;
     right: .9em;
     
@@ -52,8 +51,6 @@ nav{
     display:flex;
     flex-direction: column;
     padding-top: 1em;
-    
-    border: 2px solid red;
 }
 #welcome-section{
     /* margin-top: 110px; */
