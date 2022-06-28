@@ -26,7 +26,8 @@ header{
     color: #8f4f06;
 }
 header h1{
-    margin-left: 1em;
+    position: relative;
+    left: .3em;
 }
 nav ul{
     padding: 0;
@@ -37,6 +38,9 @@ nav ul{
 }
 nav li{
     margin-left: 2em;
+    border: 2px solid blue;
+    position: relative;
+    right: .9em;
     
 }
 nav a{
@@ -48,7 +52,8 @@ nav{
     display:flex;
     flex-direction: column;
     padding-top: 1em;
-    margin-right: 2em;
+    
+    border: 2px solid red;
 }
 #welcome-section{
     /* margin-top: 110px; */
