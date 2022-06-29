@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div>
@@ -21,62 +23,82 @@
         </nav>
     </header>
     <main>
-    <section id="welcome-section">
-        <div id="welcome-section-contents">
-    <div id="desc">
-        <br>
-        <br>
-    <p>Hello, my name is</p>
-    <h1> Amadi <span>Jerry</span></h1>
-    <p class="role">I'm a Frontend Web Developer</p>
-    <button>Hire Me</button>
-    <p id="hire"></p>
-    </div>
-    <div id="amadiImg"><img
-            src="https://images.pexels.com/photos/2216607/pexels-photo-2216607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="" id="amadi"></div>
+        <section id="welcome-section">
+            <div id="welcome-section-contents">
+                <div id="desc">
+                    <br>
+                    <br>
+                    <p>Hello, my name is</p>
+                    <h1> Amadi <span>Jerry</span></h1>
+                    <p class="role">I'm a Frontend Web Developer</p>
+                    <button>Hire Me</button>
+                    <p id="hire"></p>
+                </div>
+                <div id="amadiImg">
+                    <img src="https://images.pexels.com/photos/2216607/pexels-photo-2216607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" id="amadi">
+                </div>
             </div>
-    </section>
-    <section id="about-me-section">
-        <br>
-        <h1>About Me</h1>
-    <div id="aboutMe">
-        <br>
-        <div id="aboutMeImg"><img src="https://images.pexels.com/photos/2216607/pexels-photo-2216607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-        <div id="aboutMeContent"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique, provident, necessitatibus culpa nobis delectus odio dolorum tempora quia omnis aspernatur illum itaque rerum magni natus facere laudantium cupiditate amet blanditiis hic dolore esse cumque quod fuga. Aut ab enim aliquid iusto laudantium quo! Vitae, accusamus facere. Nemo at culpa assumenda, facilis doloremque totam ratione, atque non quae omnis, iure odit autem quod accusamus voluptas aspernatur rerum maiores. Deleniti, aliquam!</p></div>
-    </div>
-    </section>
-    <section id="projects">
-        <br>
-        <h1>These are some of my Projects</h1>
-        <br>
-        <div id="project-grid">
-            <a href="https://codepen.io/jerry_jeager/pen/XWZdXzm">
-                <img src="https://images.pexels.com/photos/10956942/pexels-photo-10956942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="project-img">
-                <p class="project-title">Tribute page</p>
-            </a>
-            <a href="https://jerryjeager.github.io/CastDiners-survey-form/">
-                <img src="https://thumbs.dreamstime.com/z/survey-form-14520527.jpg" alt="" class="project-img">
-            </a>
-        </div>
-        <!-- <div id="project-grid">
-            <a href="https://codepen.io/jerry_jeager/pen/XWZdXzm"><img src="https://images.pexels.com/photos/10956942/pexels-photo-10956942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="" class="tributePage"></a>
-            <img src="https://th.bing.com/th/id/OIP.TbKpp7i_8lC96Z5OYYqLTwHaFc?pid=ImgDet&rs=1" alt="" class="surveyForm">
-        </div>
-        <div id="projectTag">
-            <div id="projectName" class="tributePageLink">
-                <a href="https://codepen.io/jerry_jeager/pen/XWZdXzm" target="_blank">Tribute Page</a>
+        </section>
+        <section id="about-me-section">
+            <br>
+            <h1>About Me</h1>
+            <div id="aboutMe">
+                <br>
+                <div id="aboutMeImg">
+                    <img src="https://images.pexels.com/photos/2216607/pexels-photo-2216607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                </div>
+                <div id="aboutMeContent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique, provident,
+                        necessitatibus culpa nobis delectus odio dolorum tempora quia omnis aspernatur illum itaque
+                        rerum magni natus facere laudantium cupiditate amet blanditiis hic dolore esse cumque quod fuga.
+                        Aut ab enim aliquid iusto laudantium quo! Vitae, accusamus facere. Nemo at culpa assumenda,
+                        facilis doloremque totam ratione, atque non quae omnis, iure odit autem quod accusamus voluptas
+                        aspernatur rerum maiores. Deleniti, aliquam!
+                    </p>
+                </div>
             </div>
-            <div id="projectName" class="surveyFormLink">
-                <a href="https://jerryjeager.github.io/CastDiners-survey-form/">Survey Form</a>
+        </section>
+        <section id="projects">
+            <br>
+            <h1>These are some of my Projects</h1>
+            <br>
+            <div id="project-flex1">
+                <a href="https://codepen.io/jerry_jeager/pen/XWZdXzm">
+                    <img src="https://images.pexels.com/photos/10956942/pexels-photo-10956942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <div class="project-title"><span> &lt; </span>Tribute page <span> / &gt;</span></div>
+                </a>
+                <a href="https://jerryjeager.github.io/CastDiners-survey-form/">
+                    <img src="https://thumbs.dreamstime.com/z/survey-form-14520527.jpg" alt="" class="project-img">
+                    <div class="project-title"><span> &lt; </span>Survey form <span> / &gt;</span></div>
+                </a>
+                <a href="https://codepen.io/jerry_jeager/pen/XWZdXzm">
+                    <img src="https://images.pexels.com/photos/10956942/pexels-photo-10956942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <div class="project-title"><span> &lt; </span>Tribute page <span> / &gt;</span></div>
+                </a>
             </div>
-        </div>
-        <br> -->
+            <br>
 
-        
-        
-    </section>
+            <div id="project-flex1">
+                <a href="https://codepen.io/jerry_jeager/pen/XWZdXzm">
+                    <img src="https://images.pexels.com/photos/10956942/pexels-photo-10956942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <div class="project-title"><span> &lt; </span>Tribute page <span> / &gt;</span></div>
+                </a>
+                <a href="https://jerryjeager.github.io/CastDiners-survey-form/">
+                    <img src="https://thumbs.dreamstime.com/z/survey-form-14520527.jpg" alt="" class="project-img">
+                    <div class="project-title"><span> &lt; </span>Survey form <span> / &gt;</span></div>
+                </a>
+                <a href="https://codepen.io/jerry_jeager/pen/XWZdXzm">
+                    <img src="https://images.pexels.com/photos/10956942/pexels-photo-10956942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <div class="project-title"><span> &lt; </span>Tribute page <span> / &gt;</span></div>
+                </a>
+            </div>
+        </section>
     </main>
 </body>
 </html>
