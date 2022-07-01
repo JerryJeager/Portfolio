@@ -1,245 +1,275 @@
-body{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-html, body {
-    overflow-x: hidden;
-    width: 100%;
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 50px);
+}
+main {
+  width: 100%;
+  /* max-width: 650px; */
+  margin: 0 auto;
+  line-height: 1.6;
+}
+span {
+  color: #73c0f4;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6eff3;
+  width: 100%;
+  color: #8f4f06;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  position: relative;
+  left: 0.3em;
+  font-weight: bold;
+}
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin-left: 2em;
+  position: relative;
+  right: 0.9em;
+}
+nav a {
+  color: #8f4f06;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+#welcome-section {
+  /* margin-top: 110px; */
+  /* margin-left: 20px; */
+  display: flex;
+  justify-content: center;
+  background-color: #f3e4c6;
+  color: #8f4f06;
+}
+#welcome-section h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+#welcome-section p {
+  font-size: 1.2rem;
+}
+#welcome-section-contents {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+#desc {
+  margin-left: 1.4em;
+}
+#amadiImg {
+  margin-top: 1.3em;
+}
 
+.role {
+  font-weight: bold;
+  color: #73c0f4;
 }
-main{
-    width: 100%;
-    /* max-width: 650px; */
-    margin: 0 auto;
-    line-height: 1.6;
-    
+button {
+  background: #8f4f06;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  height: 30px;
+  width: 90px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-span{
+button:hover {
+  background: white;
+  border: 2px solid #8f4f06;
+  color: #8f4f06;
+}
+#amadi {
+  border-radius: 50%;
+  height: 190px;
+  position: relative;
+  right: 5px;
+}
+#about-me-section {
+  background-color: #728ca3;
+  color: white;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+#about-me-section h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin: 0 4em;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.2em;
+}
+#aboutMe {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#aboutMeImg {
+  width: 30%;
+  margin: 1em 0;
+}
+#aboutMeImg img {
+  filter: grayscale(100%);
+  max-width: 100%;
+  border-radius: 9px;
+}
+#aboutMe h1 {
+  text-align: center;
+}
+#aboutMeContent {
+  width: 60%;
+}
+#projects {
+  background-color: #8f4f06;
+  height: auto;
+}
+#projects h1 {
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid white;
+}
+#project-flex1 {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#project-flex1 img {
+  width: 350px;
+  height: 400px;
+}
+.project-tile {
+  text-align: center;
+  background-color: #73c0f4;
+  padding: 0.3em 0.2em;
+  position: relative;
+  bottom: 0.5em;
+  margin: 0 auto;
+  font-weight: bold;
+}
+#project-flex1 a {
+  text-decoration: none;
+  color: #8f4f06;
+  font-size: 1.2em;
+}
+#projects span {
+  color: orangered;
+  font-weight: bold;
+  animation-name: tagAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+#contact{
+  background-color: #333;
+  height: 100vh;
+}
+#contact-text{
+  margin: 0 auto;
+  width: 300px;
+  border: 2px solid white;
+  text-align: center;
+  color: whitesmoke;
+}
+#contact-icons{
+  border: 2px solid white;
+  margin-top: 2em;
+}
+@keyframes tagAnimation {
+  100% {
     color: #73c0f4;
+  }
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color:#e6eff3;
-    width: 100%;
-    color: #8f4f06;
-}
-header h1{
-    position: relative;
-    left: .3em;
-}
-nav ul{
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
 
-}
-nav li{
-    margin-left: 2em;
-    position: relative;
-    right: .9em;
-    
-}
-nav a{
-    color: #8f4f06;
-    text-decoration: none;
-    font-size: .8rem;
-}
-nav{
-    display:flex;
+@media screen and (max-width: 450px) {
+  #aboutMe {
     flex-direction: column;
-    padding-top: 1em;
-}
-#welcome-section{
-    /* margin-top: 110px; */
-    /* margin-left: 20px; */
-    display:flex;
-    justify-content: center;
-    background-color: #f3e4c6;
-    color: #8f4f06;
-}
-#welcome-section h1{
-    font-size: 1.7rem;
-    font-weight: bold;
-}#welcome-section p{
-    font-size: 1.2rem;
-}
-#welcome-section-contents{
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-}
-#desc{
-    margin-left: 1.4em;
-}
-#amadiImg{
-    margin-top: 1.3em;
-}
-
-.role{
-    font-weight: bold;
-    color: #73c0f4;
-}
-button{
-    background: #8f4f06;
-    color: white;
-    border-radius: 7px;
-    border: none;
-    height: 30px;
-    width: 90px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-button:hover{
-    background: white;
-    border: 2px solid #8f4f06;
-    color:#8f4f06;
-}
-#amadi{
-    border-radius: 50%;
-    height: 190px;
-    position: relative;
-    right: 5px;
-
-}
-#about-me-section{
-    background-color: #728ca3;
-    color: white;
-    line-height: 1.7;
-    font-size: 1.2rem;
-}
-#about-me-section h1{
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.7;
-    margin: 0 4em;
-    border-bottom: 2px solid white;
-    padding-bottom: .2em;
-    
-}
-#aboutMe{
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    
-}
-#aboutMeImg{
-    width: 30%;
-    margin: 1em 0;
-}
-#aboutMeImg img{
-    filter: grayscale(100%);
+  }
+  #aboutMeImg {
+    width: 300px;
     max-width: 100%;
-    border-radius: 9px;
-}
-#aboutMe h1{
-    text-align: center;
-}
-#aboutMeContent{
-    width: 60%;
-
-}
-#projects{
-    background-color: #8f4f06;
-    height: auto;
-}
-#projects h1{
-    text-align: center;
-    color: white;
-    border-bottom: 2px solid white;
-}
-#project-flex1{
-    display: flex;
+    margin: 0 auto;
+  }
+  #aboutMeContent {
     width: 95%;
     margin: 0 auto;
-    justify-content: space-between;
+  }
+  #project-flex1 {
+    flex-direction: column;
+  }
 }
-#project-flex1 img{
-    width: 350px;
-    height: 400px;
-}
-.project-title{
-    text-align: center;
-    background-color: #73c0f4;
-    padding: .3em .2em;
-    position: relative;
-    bottom: .5em;
-}
-#project-flex1  a{
-    text-decoration: none;
-    color: #8f4f06;
-    font-size: 1.2em;
-}
-#projects span{
-    color: red;
-    animation-name: tagAnimation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    
-}
-@keyframes tagAnimation{
-    100%{
-        color: #73c0f4;
-    }
-}
-
-@media screen and (max-width: 450px){
-    #aboutMe{
-        flex-direction: column;
-    }
-    #aboutMeImg{
-        width: 300px;
-        max-width: 100%;
-        margin: 0 auto;
-    }
-    #aboutMeContent{
-        width: 95%;
-        margin: 0 auto;
-    }
-    #project-flex1{
-        flex-direction: column;
-    }
-    
-}
-@media screen and (min-width: 1024px){
-    #welcome-section{
+@media screen and (min-width: 1024px) {
+  header h1{
+    font-size: 2rem;
+  }
+  nav li{
+    padding: .3em;
+  }
+  nav li:hover{
+    border-bottom: 4px solid #728ca3;
+    transition-delay: 0.1s;
+  }
+  nav a{
+    font-size: 1rem;
+  }
+  #welcome-section {
     /* margin-top: 110px; */
     /* margin-left: 20px; */
-    display:flex;
+    display: flex;
     justify-content: center;
     background-color: #f3e4c6;
     color: #8f4f06;
-}
-#welcome-section h1{
+  }
+  #welcome-section h1 {
     font-weight: bold;
     font-size: 3rem;
-}#welcome-section p{
+  }
+  #welcome-section p {
     font-size: 2rem;
-}
-#welcome-section-contents{
+  }
+  #welcome-section-contents {
     width: 95%;
     display: flex;
     justify-content: space-between;
-}
-#desc{
+  }
+  #desc {
     margin-left: 6em;
-}
-#amadiImg{
+  }
+  #amadiImg {
     margin-top: 1.3em;
     margin-right: 4em;
-}
-#amadi{
+  }
+  #amadi {
     height: 21em;
     width: auto;
     max-width: 100%;
-}
-.role{
+  }
+  .role {
     font-weight: bold;
     color: #73c0f4;
-}
-button{
+  }
+  button {
     background: #8f4f06;
     color: white;
     border-radius: 7px;
@@ -248,5 +278,10 @@ button{
     width: 90px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  #contact-text{
+  margin: 0 auto;
+  width: 900px;
+  
 }
 }
